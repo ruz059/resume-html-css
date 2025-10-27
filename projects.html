@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Zhao - Projects & Courses</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <h1>Ruoyun (Mary) Zhao</h1>
+        <p>Projects & Course Experience</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home(Resume)</a></li>
+                <li><a href="awards.html">Awards & Leadership</a></li>
+                <li><a href="projects.html">Projects and Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>PROJECT EXPERIENCE</h2>
+            <ol>
+                <li>Countryside Sanitary Reporting Software</li>
+                <li>Business Case Analysis Framework</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>University Information</h3>
+            <iframe 
+                src="https://www.ucsd.edu/" 
+                width="100%" 
+                height="400"
+                title="UCSD Website">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made by Mary Zhao</p>
+    </footer>
+
+    <script>
+        class HelloWorld extends HTMLElement {
+            constructor() {
+                super();
+                console.log("Hello World from Projects page!");
+            }
+        }
+        customElements.define('hello-world', HelloWorld);
+    </script>
+
+    <hello-world></hello-world>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mary Zhao - Resume</title>
+    <link rel="stylesheet" href="styles.css"> <!-- current don't have -->
+    
+    <!--<style>
+        @keyframes pageLoad {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+        body {
+            height: 100dvh;    /* 动态视口高度 */
+            width: 100dvw;     /* 动态视口宽度 */
+        }
+         /* latin */
+        @font-face {
+            font-family: 'Sofia';
+            font-style: normal;
+            font-weight: 400;
+            src: url(https://fonts.gstatic.com/s/sofia/v15/8QIHdirahM3j_su5uI0.woff2) format('woff2');
+            unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+        }
+        h3{
+             color: paleturquoise;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    
+            transition: all 3s ease-in;
+        }
+        h3:hover{
+            background-color: pink;
+            width:100%;
+            height:20px;
+            border: 50%; 
+            transform: rotate(350deg)
+        }
+        h1 {
+            font-family: "Sofia", sans-serif;
+            font-size: 30px;
+            text-shadow: 3px 3px 3px #ababab;
+        }
+
+
+        :root {
+            --primary-color: #8b5cf6;
+            --spacing: 1rem;
+        }
+
+        header {
+            background: var(--primary-color);
+            padding: var(--spacing);
+        }
+
+        main {
+            color: var(--primary-color);
+            margin: var(--spacing);
+        }
+
+        footer {
+            border-top: 1px solid var(--primary-color);
+        }
+
+        resume-section {
+            display: block;
+            margin: 2rem 0;
+            padding: 1rem;
+            border-left: 4px solid #e9aafc;
+            background-color: #f9f9f9;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #f7faf4;
+        }
+
+        body {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            min-height: 100vh;
+            margin: 0;
+            animation: pageLoad 1s ease-in-out;
+        }
+
+
+        footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            background: #333;
+            color: white;
+        }
+    </style>-->
+</head>
+<body>
+    <header>
+        <h1 >Ruoyun (Mary) Zhao</h1>
+        <p>ruz059@ucsd.edu | 619-361-5846</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home(Resume)</a></li>
+                <li><a href="awards.html">Awards & Leadership</a></li>
+                <li><a href="projects.html">Projects and Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <resume-section>
+            <h2>EDUCATION</h2>
+            
+            <article>
+                <h3>University of California, San Diego</h3>
+                <p><em>Current University</em> | San Diego, CA | Summer 2024-2028</p>
+                <ul>
+                    <li><strong>Provst Honors</strong>; GPA: 3.7</li>
+                    <li>Finished CHEM 41B,C; CHEM 7 Lab; PHYSIC 2C Lab in UCSD</li>
+                    <li>Potential Major: <span>Mathematics</span> and <span>Computer Science</span></li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>University of Cornell</h3>
+                <p><i>Continuing Education</i> | Ithaca, NY | Summer 2021</p>
+                <ul>
+                    <li>Python for non-Dyson majors | Grade: A | Credits: 3</li>
+                </ul>
+            </article>
+        </resume-section>
+
+        <resume-section>
+            <h2>RELATED EMPLOYMENT HISTORY</h2>
+            
+            <article>
+                <h3>Part Time Teaching Positions</h3>
+                
+                <h4>Teaching Assistant at TestDaily Education Institution</h4>
+                <p><b>September 2023 - Present</b></p>
+                <ol>
+                    <li>Teaching Assistant for UKCHO</li>
+                    <li>Teaching Assistant for AMC10 & 12</li>
+                    <li>Teaching Assistant for AP English Language</li>
+                </ol>
+            </article>
+        </resume-section>
+
+        <section>
+            <h3>Contact Mary!</h3>
+            <picture>
+                <source srcset="crosssky.img" media="(min-width: 800px)">
+                <source srcset="crosssky.img" media="(max-width: 799px)">
+                <img src="crosssky.img" alt="Cross in the sky" width="200">
+            </picture>
+            <form>
+                <fieldset>
+                    <legend>Send me a Message</legend>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <div>
+            <dialog open>
+                <p>Welcome to my resume website!</p>
+            </dialog>
+            <svg width="50" height="50">
+                <circle cx="25" cy="25" r="10" stroke="pink" stroke-width="2" fill="none" />
+            </svg>
+            <noscript>
+                <p>JavaScript is disabled in your browser.</p>
+            </noscript>
+        </div>
+    </main>
+
+    <footer>
+        <p>Made by Mary Zhao</p>
+        <p>Contact: ruz059@ucsd.edu</p>
+        <progress value="75" max="100">75%</progress>
+    </footer>
+
+    <script>
+        class HelloWorld extends HTMLElement {
+            constructor() {
+                super();
+                console.log("Hello World!");
+            }
+        }
+        customElements.define('hello-world', HelloWorld);
+    </script>
+
+    <hello-world></hello-world>
+    <script src="app.js"></script>
+</body>
+</html>
