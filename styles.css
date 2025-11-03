@@ -523,7 +523,36 @@ picture {
     margin-top: 0.75rem;
     font-size: 0.9rem;
 }
+.image-citation {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-style: normal; /* Override default italic style */
+    text-align: center;
+    padding: 0.5rem;
+    background: color-mix(in srgb, var(--mint-green) 30%, transparent 70%);
+    border-radius: 4px;
+    
+    & a {
+        color: var(--primary-green);
+        text-decoration: none;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+a {
+  color: inherit; /* Inherits color from parent */
+  text-decoration: none; /* Removes underline */
+}
 
+/* If you want to keep the italic style but make it subtle */
+.image-citation.italic {
+    font-style: italic;
+    opacity: 0.7;
+}
 /* Responsive Image Sizes */
 @media (max-width: 768px) {
     picture {
